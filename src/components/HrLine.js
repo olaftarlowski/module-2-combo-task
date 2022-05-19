@@ -1,5 +1,5 @@
 const HrLine = () => {
-  return <hr style={{ width: "100%" }} />;
+  return <hr style={{ width: "90%" }} />;
 };
 
 export default HrLine;

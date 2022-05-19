@@ -5,7 +5,6 @@ const styles = {
   flexDirection: "column",
   justifyContent: "space-around",
   alignItems: "center",
-  width: "50%",
 };
 
 const Form = () => {

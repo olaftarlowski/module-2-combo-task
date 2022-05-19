@@ -2,10 +2,11 @@ import React from "react";
 import BlogTile from "./BlogTile";
 
 const styles = {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-around"
-}
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-around",
+  flexWrap: "wrap",
+};
 
 const Task1 = () => {
   const posts = [
