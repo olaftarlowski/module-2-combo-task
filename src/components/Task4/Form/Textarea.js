@@ -7,11 +7,16 @@ const Textarea = ({
   borderRadius,
   borderColor,
 }) => {
+  const colorPalette = {
+    alizarin: "#e74c3c",
+    clouds: "#ecf0f1",
+  };
+
   const styles = {
     fontSize: "18px",
     margin: "5px",
-    backgroundColor: `${bgColor}`,
-    color: `${color}`,
+    backgroundColor: `${colorPalette[bgColor]}`,
+    color: `${colorPalette[color]}`,
     border: `${borderSize} solid ${borderColor}`,
     borderRadius: `${borderRadius}`,
   };

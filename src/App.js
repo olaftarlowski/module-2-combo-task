@@ -11,11 +11,6 @@ const styles = {
   width: "50%",
 };
 
-// const colorPalette = {
-//   red: "#eb4d4b",
-//   gray: "#c7ecee",
-// };
-
 function App() {
   return (
     <div className="App">
@@ -26,7 +21,7 @@ function App() {
           showMore
           content="Method: Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10 minutes...."
         />
-        {/* <Form />
+        <Form />
         <HrLine />
         <Task1 />
         <HrLine />
@@ -35,7 +30,7 @@ function App() {
         <div style={styles}>
           <Task3 />
           <Task3v2 />
-        </div> */}
+        </div>
       </header>
     </div>
   );

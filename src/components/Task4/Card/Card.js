@@ -6,6 +6,7 @@ import {
   faShareNodes,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
+import { Collapse } from "react-collapse";
 
 const CardWrapper = styled.div`
   background-color: #fff;
@@ -29,14 +30,15 @@ const CardWrapper = styled.div`
     object-fit: cover;
   }
 
-  > div {
-    padding: 16px;
+  .ReactCollapse--collapse {
+    transition: height 500ms;
   }
 `;
 
 const CardHead = styled.div`
   display: flex;
   flex-direction: row;
+  padding: 16px;
 
   .cardhead__avatar {
     color: rgba(0, 0, 0, 0.87);
@@ -78,12 +80,25 @@ const CardHead = styled.div`
   }
 `;
 
+const CardDescription = styled.div`
+  padding: 16px;
+
+  p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    color: rgba(0, 0, 0, 0.6);
+  }
+`;
+
 const CardControls = styled.div`
   color: rgba(0, 0, 0, 0.87);
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  padding: 8px;
+  padding: 16px;
 
   button {
     display: inline-flex;
@@ -134,18 +149,19 @@ const CardControls = styled.div`
   }
 `;
 
-const CardDescription = styled.div`
+const CardDescriptionCollapse = styled.div`
+  padding: 16px;
+
   p {
+    color: rgba(0, 0, 0, 0.87);
     margin: 0;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.43;
-    letter-spacing: 0.01071em;
-    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    margin-bottom: 16px;
   }
 `;
-
-const CardDescriptionCollapse = styled.div``;
 
 const Card = ({ title, intro, content }) => {
   const [expand, setExpand] = useState(false);
@@ -193,11 +209,12 @@ const Card = ({ title, intro, content }) => {
           <FontAwesomeIcon icon={faAngleDown} />
         </button>
       </CardControls>
-      {expand ? (
-        <CardDescriptionCollapse>tu bedzie kolaps</CardDescriptionCollapse>
-      ) : (
-        ""
-      )}
+      {/* destructure showMore and pass instead of expand for control outside component */}
+      <Collapse isOpened={expand}>
+        <CardDescriptionCollapse>
+          <p>{content}</p>
+        </CardDescriptionCollapse>
+      </Collapse>
     </CardWrapper>
   );
 };

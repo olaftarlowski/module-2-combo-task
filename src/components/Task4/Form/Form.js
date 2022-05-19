@@ -8,26 +8,26 @@ const styles = {
   width: "50%",
 };
 
-const formSubmitHandler = (e) => {
-  e.preventDefault();
-};
-
 const Form = () => {
+  const formSubmitHandler = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <form onSubmit={formSubmitHandler} style={styles}>
-      <Button bgColor="#eb4d4b" color="#c7ecee" icon="user">
+      <Button bgColor="alizarin" color="clouds" icon="user">
         Click me
       </Button>
       <Input
-        bgColor="#eb4d4b"
-        color="#c7ecee"
+        bgColor="alizarin"
+        color="clouds"
         borderRadius="4px"
         borderColor="white"
         borderSize="3px"
       />
       <Textarea
-        bgColor="#eb4d4b"
-        color="#c7ecee"
+        bgColor="alizarin"
+        color="clouds"
         borderRadius="3px"
         borderColor="white"
         borderSize="3px"
