@@ -20,16 +20,16 @@ const Form = () => {
       <Input
         bgColor="alizarin"
         color="clouds"
-        borderRadius="4px"
-        borderColor="white"
-        borderSize="3px"
+        borderRadius="8px"
+        borderColor="#fff"
+        borderSize="2px"
       />
       <Textarea
         bgColor="alizarin"
         color="clouds"
-        borderRadius="3px"
-        borderColor="white"
-        borderSize="3px"
+        borderRadius="12px"
+        borderColor="#fff"
+        borderSize="2px"
       />
     </form>
   );

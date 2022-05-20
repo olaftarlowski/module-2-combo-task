@@ -1,3 +1,4 @@
+import Employees from "components/Task4/Employees/Employees";
 import "./App.css";
 import HrLine from "components/HrLine";
 import { Task1, Task2, Task3, Task3v2 } from "components/index-tasks";
@@ -10,21 +11,25 @@ const styles = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-around",
+  margin: "40px 0",
   width: "50%",
 };
 
 const styles2 = {
-  width: "100%",
+  alignItems: "center",
   display: "grid",
   gridTemplateColumns: "repeat(3, 1fr)",
   justifyItems: "center",
-  alignItems: "center",
+  margin: "40px 0",
+  width: "100%",
+
 };
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Employees/>
         <div style={styles2}>
           <Menu>
             <MenuLink to="/">Home</MenuLink>
