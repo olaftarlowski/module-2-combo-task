@@ -191,7 +191,7 @@ const Card = ({ title, intro, content }) => {
         </div>
       </CardHead>
       <img
-        src="https://144f2a3a2f948f23fc61-ca525f0a2beaec3e91ca498facd51f15.ssl.cf3.rackcdn.com/uploads/food_portal_data/recipes/recipe/hero_article_image/71/527501179e9319cf888f/letterbox_Summer_20paella.jpg"
+        src="https://thumbs.dreamstime.com/b/seafood-paella-as-closeup-wrought-iron-pan-35125000.jpg"
         alt="Shrimp and Chorizo Paella"
       />
 
